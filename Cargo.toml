@@ -1,0 +1,15 @@
+[package]
+name = "my_func"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tproxy-config = {version = "*",git = "https://github.com/xmh0511/tun2socks5.git"}
+pnet_packet = {version = "*",git = "https://github.com/libpnet/libpnet.git"}
+tun2 = {version = "0.6.4",features = ["async"]}
+tokio = {version = "1.35.1",features = ["macros","rt-multi-thread"]}
+futures ={ version = "0.3.30"}
+tokio-util = { version = "0.7", features = ["codec"] }
+packet = "0.1.4"
